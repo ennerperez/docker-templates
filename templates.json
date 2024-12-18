@@ -1,0 +1,53 @@
+{
+  "version": "1",
+  "templates": [
+    {
+      "id": 1,
+      "type": 3,
+      "title": "System",
+      "description": "Base System",
+      "categories": [
+        "Platform"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/ennerperez/portainer-templates",
+        "stackfile": "stacks/system/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "DD_API_KEY",
+          "label": "Datadog API key"
+        },
+        {
+          "name": "CF_TOKEN",
+          "label": "Cloudflare Token"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": 3,
+      "title": "Services",
+      "description": "Base Services",
+      "categories": [
+        "Platform"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/ennerperez/portainer-templates",
+        "stackfile": "stacks/services/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "HOMEDIR",
+          "label": "Home Directory"
+        },
+        {
+          "name": "ACCOUNT",
+          "label": "User Account Name"
+        }
+      ]
+    }
+  ]
+}

@@ -48,6 +48,38 @@
           "label": "User Account Name"
         }
       ]
+    },
+    {
+      "id": 3,
+      "type": 3,
+      "title": "Minecraft",
+      "description": "Minecraft Server",
+      "categories": [
+        "Gaming"
+      ],
+      "platform": "linux",
+      "logo": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/android-icon-192x192.png",
+      "repository": {
+        "url": "https://github.com/ennerperez/portainer-templates",
+        "stackfile": "stacks/minecraft/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "TYPE",
+          "label": "Server Type",
+          "default": "FABRIC"
+        },
+        {
+          "name": "VERSION",
+          "label": "Minecraft Version",
+          "default": "1.20.1"
+        },
+        {
+          "name": "FABRIC_VERSION",
+          "label": "Fabric Version",
+          "default": "0.15.3"
+        }
+      ]
     }
   ]
 }
